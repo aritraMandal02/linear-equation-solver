@@ -40,6 +40,6 @@ if clicked:
     try:
         X = np.linalg.solve(A, B)
         for i, val in enumerate(X):
-            st.text(f'x{i+1} = {val}')
+            st.text(f'x{i+1} = {round(val, 3)}')
     except LinAlgError as e:
         st.text(f'{e}: Invalid system of equations')
